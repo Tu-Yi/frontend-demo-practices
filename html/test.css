@@ -1,0 +1,30 @@
+/* div strong em {
+    background-color: red;
+} */
+
+
+/* strong em {
+    background-color: blue;
+} */
+
+#wrapper .stro em {
+    background-color: greenyellow;
+}
+
+div#aa.demo {
+    background-color: yellow;
+}
+
+
+/*100  1    101*/
+
+#idDiv p {
+    background-color: red;
+}
+
+
+/* 10     1 100     111*/
+
+.classDiv p#idP {
+    background-color: blue;
+}
