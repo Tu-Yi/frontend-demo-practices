@@ -1,30 +1,77 @@
-/* div strong em {
-    background-color: red;
+/* .item-1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    display: inline-block;
+}
+
+.item-2 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.wrapper-1 {
+    font-size: 0;
+    border: 10px solid black;
+    margin-bottom: 10px;
+}
+
+.wrapper-2 {
+    border: 10px solid black;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: '';
 } */
 
 
-/* strong em {
-    background-color: blue;
+/* .center {
+    background-color: yellowgreen;
+    display: flow-root;
+    height: 200px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.right {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: rosybrown;
 } */
 
-#wrapper .stro em {
-    background-color: greenyellow;
+
+/* .wrapper {
+    font-size: 0;
+} */
+
+
+/* img {
+    width: 100px;
+    border: 1px solid red;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
-div#aa.demo {
-    background-color: yellow;
-}
-
-
-/*100  1    101*/
-
-#idDiv p {
+.demo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
     background-color: red;
-}
-
-
-/* 10     1 100     111*/
-
-.classDiv p#idP {
-    background-color: blue;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
 }
