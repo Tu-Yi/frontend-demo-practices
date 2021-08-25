@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: absolute;
+    width: 640px;
+    left: 50%;
+    top: 50%;
+    margin-left: -320px;
+    margin-top: -100px;
+}
+
+.ring {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.ring_1 {
+    border: 20px solid #2267A9;
+    z-index: 3;
+}
+
+.ring_2 {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    border: 20px solid #000000;
+}
+
+.ring_3 {
+    position: absolute;
+    top: 0;
+    left: 440px;
+    border: 20px solid #E00F00;
+}
+
+.ring_4 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border: 20px solid #F4B100;
+    z-index: 1;
+}
+
+.ring_5 {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    border: 20px solid #35A23C;
+}
