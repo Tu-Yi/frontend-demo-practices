@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '微软雅黑'
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.buttons {
+    font-size: 0;
+    text-align: center;
+}
+
+.btn-blue,
+.btn-green,
+.btn-red {
+    display: inline-block;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-right: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #3e9dfe;
+}
+
+.btn-green {
+    background-color: #66c13b;
+}
+
+.btn-red {
+    background-color: #F36C69;
+    margin-right: 0px;
+}
+
+.contants {
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 40px;
+    z-index: 1;
+    background-color: #3e9dfe;
+}
+
+.contants .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contants .desc {
+    padding: 30px 15px 20px 15px;
+    background-color: '#E9F4FE';
+}
+
+.contants .desc p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contants .desc span {
+    font-size: 14px;
+    color: #3e9dfe;
+}
+
+.contants .author {
+    font-size: 14px;
+    color: #000;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

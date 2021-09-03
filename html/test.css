@@ -5,45 +5,25 @@
     color: #424242;
 }
 
-ul {
-    width: 300px;
-    margin: 0 auto;
-    list-style: none;
-}
-
-.link {
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: rgba(0, 0, 0, 0.5);
-    position: relative;
+.center {
+    float: left;
+    height: 200px;
     width: 100%;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: blue;
 }
 
-.link::before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url(baidu.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    vertical-align: -3px;
+.left {
+    width: 100px;
+    height: 100px;
+    background-color: #fac;
+    float: left;
+    margin-left: -100%;
 }
 
-.link::after {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url(arrow.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 0;
-    top: 18px;
+.right {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    float: left;
+    margin-left: -100px;
 }
