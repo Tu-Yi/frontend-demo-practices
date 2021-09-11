@@ -1,0 +1,1 @@
+function Deng(name, wife) {}

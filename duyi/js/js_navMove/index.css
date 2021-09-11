@@ -4,48 +4,32 @@
     box-sizing: border-box;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 ul,
 ol {
     list-style: none;
 }
 
-.hor-wrapper {
-    width: 360px;
+.wrapper {
+    width: 500px;
     height: 40px;
-    vertical-align: 10px;
-    border: 5px solid #fac;
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: #E9F6FF;
-    color: cornflowerblue;
-    position: relative;
-    transition: all 1s;
-}
-
-.hor-wrapper ul {
-    position: absolute;
-    width: 632px;
-    transition: all 1s;
+    font-size: 0;
     white-space: nowrap;
-    /*文本不会换行，文本会在在同一行上继续*/
-    overflow-y: auto;
-    overflow-x: auto;
-    /*可滑动*/
+    overflow: scroll;
+    margin-left: 100px;
 }
 
-.hor-wrapper ul>li {
-    transition: all 1s;
-    float: left;
-    height: 30px;
-    line-height: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-right: 1px solid #e0e0e0;
-    cursor: pointer;
+.wrapper li {
+    width: 100px;
+    height: 38px;
+    border: 1px solid #fff;
+    background: #fac;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 38px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
