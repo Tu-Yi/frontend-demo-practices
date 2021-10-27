@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-27 11:11:41
- * @LastEditTime: 2021-10-26 21:41:29
+ * @LastEditTime: 2021-10-27 18:07:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \frontend-demo-practices\exe_html\test.js
@@ -10,21 +10,25 @@
 
 /**
  * @description:
- * @param {*}
+ * @param "asd"
  * @return {*}
  */
 function foo() {
-    bar('Hello World')
+  bar('Hello World')
 }
 
 /**
  * @description:
  * @param {string} str
  * @return {*}
- * TODO 'LEI '
+ * ! hahaha
+ * ? hahahaha
+ * * lalalalla
+ * // aaaaaaa
  */
 function bar(str) {
-    console.log(123)
+  console.log(123)
 }
 
+//TODO waiting others
 foo()
