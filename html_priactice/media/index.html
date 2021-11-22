@@ -1,0 +1,48 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-11-22 17:28:59
+ * @LastEditTime: 2021-11-22 17:32:32
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \frontend-demo-practices\html_priactice\media\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>vedio audio</title>
+  </head>
+  <body>
+    <video
+      controls
+      loop
+      poster="./poster.jpg"
+      preload="auto"
+      width="500px"
+      height="290px"
+    >
+      <source src="./rabbit320.mp4" type="video/mp4" />
+      <source src="./rabbit320.webm" type="video/webm" />
+      <p>
+        Your browser doesn't support HTML5 video. Here is a
+        <a href="rabbit320.mp4">link to the video</a> instead.
+      </p>
+    </video>
+    <audio controls>
+      <source src="./Tim Urban - Perfectly You.mp3" type="audio/mp3" />
+      <source src="./viper.ogg" type="audio/ogg" />
+      <p>
+        Your browser doesn't support HTML5 audio. Here is a
+        <a href="viper.mp3">link to the audio</a> instead.
+      </p>
+    </audio>
+    <embed
+      src="http://player.youku.com/player.php/sid/XMzI2NTc4NTMy/v.swf"
+      width="480"
+      height="400"
+      type="application/x-shockwave-flash"
+    />
+  </body>
+</html>
