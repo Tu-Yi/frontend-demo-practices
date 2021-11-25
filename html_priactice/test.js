@@ -1,23 +1,55 @@
-/*
- * @Author: your name
- * @Date: 2021-08-27 11:11:41
- * @LastEditTime: 2021-11-22 19:59:13
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \frontend-demo-practices\html_priactice\test.js
- */
-
+var http = require('http')
 var fs = require('fs')
+var url = require('url')
+var port = process.argv[2]
 
-var dirName = process.argv[2] // 你传的参数是从第 2 个开始的
+if (!port) {
+  console.log('请指定端口号好不啦？\nnode server.js 8888 这样不会吗？')
+  process.exit(1)
+}
 
-fs.mkdirSync('./' + dirName) // mkdir $1
-process.chdir('./' + dirName) // cd $1
-fs.mkdirSync('css') // mkdir css
-fs.mkdirSync('js') // mkdir js
+var server = http.createServer(function (request, response) {
+  var parsedUrl = url.parse(request.url, true)
+  var pathWithQuery = request.url
+  var queryString = ''
+  if (pathWithQuery.indexOf('?') >= 0) {
+    queryString = pathWithQuery.substring(pathWithQuery.indexOf('?'))
+  }
+  var path = parsedUrl.pathname
+  var query = parsedUrl.query
+  var method = request.method
 
-fs.writeFileSync('./index.html', '')
-fs.writeFileSync('css/style.css', '')
-fs.writeFileSync('./js/main.js', '')
+  /******** 从这里开始看，上面不要看 ************/
+  console.log('有个傻子发请求过来啦！路径（带查询参数）为：' + path)
+  console.log(queryString)
+  console.log(query)
+  console.log(method)
+  console.log('有个傻子发请求过来啦！路径（带查询参数）为：' + pathWithQuery)
 
-process.exit(0)
+  if (path === '/') {
+    response.statusCode = 200
+    response.setHeader('Content-Type', 'text/html;charset=utf-8')
+    response.write(`二哈`)
+    response.end()
+  } else if (path === '/x') {
+    response.statusCode = 200
+    response.setHeader('Content-Type', 'text/css;charset=utf-8')
+    response.write(`body{color: red;}`)
+    response.end()
+  } else {
+    response.statusCode = 404
+    response.setHeader('Content-Type', 'text/html;charset=utf-8')
+    response.write(`你输入的路径不存在对应的内容`)
+    response.end()
+  }
+
+  /******** 代码结束，下面不要看 ************/
+})
+
+server.listen(port)
+console.log(
+  '监听 ' +
+    port +
+    ' 成功\n请用在空中转体720度然后用电饭煲打开 http://localhost:' +
+    port
+)
