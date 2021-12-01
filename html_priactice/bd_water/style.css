@@ -1,0 +1,13 @@
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.img_water {
+  width: 440px;
+  text-align: center;
+}
+
+.sender-column {
+  text-align: right;
+}
