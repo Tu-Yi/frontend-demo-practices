@@ -1,0 +1,63 @@
+body {
+  color: black;
+  margin: 0;
+}
+a {
+  color: inherit; /* a有自己的蓝色，这里a标签继承父元素文字颜色 */
+  text-decoration: none;
+}
+
+/* 清除浮动，放在父元素上 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+header {
+  padding: 22px 16px 22px 16px; /* 调整header内边距样式 */
+}
+header > .logo {
+  float: left;
+  font-size: 24px;
+  font-family: 'Arial Black';
+}
+
+header > .logo > span:first-child {
+  margin-right: 4px; /* 两个span中间有空格，因为html有回车，去掉回车，用margin */
+  color: #e6686a;
+}
+header > .logo > span:last-child {
+  color: #9a9da2;
+}
+
+header > nav {
+  float: right;
+  padding-top: 5px; /* 调整nav高度，对齐左边logo */
+}
+
+header > nav > ul > li {
+  float: left;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+header > nav > ul > li > a {
+  display: block; /* 如果a是内联元素则会溢出父元素 */
+  font-size: 12px;
+  color: #b7b7b7;
+  font-weight: bold;
+  border-top: 3px solid transparent; /* 加上top是为了让a元素在容器里垂直居中 */
+  border-bottom: 3px solid transparent; /* 提前给一个透明的下边框，免得hover给边框的时候抖动 */
+  padding-top: 5px;
+  padding-bottom: 5px; /* hover加的边框有一定距离 */
+}
+header > nav > ul > li > a:hover {
+  border-bottom: 3px solid #e06567;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

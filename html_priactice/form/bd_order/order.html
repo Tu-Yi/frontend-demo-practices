@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<title>Forms Review</title>
+</head>
+
+<body>
+	<section id="overlay">
+
+		<p id="logo">Order your milktea!</p>
+		<hr>
+		<!--在这里进行您的代码编写-->
+		<form action="submission.html" method="post">
+			<p>
+				<label class="" for="taste">你想要什么口味的奶茶？
+					<input type="text" id="taste" min="1" maxlength="10" required>
+				</label>
+			</p>
+			<p>
+				<label class="" for="num">你想要几杯？
+					<input type="number" id="num" required min="1" max="4">
+				</label>
+			</p>
+			<p>
+				<label class="" for="sugar">你需要的糖分量
+					<input type="range" name="" id="sugar">
+				</label>
+			</p>
+			<p>
+				<label class="" for="top">你想要什么顶料？
+					<input type="checkbox" name="top" value="bql">冰淇淋
+					<input type="checkbox" name="top" value="ng">奶盖
+					<input type="checkbox" name="top" value="kkf">可可粉
+				</label>
+			</p>
+			<p>
+				<label class="" for="bin">你需要加冰吗？
+					<input type="radio" name="bin" value="yes">yes
+					<input type="radio" name="bin" value="no">no
+				</label>
+			</p>
+			<p>
+				<label class="" for="liao">你需要加什么料？
+					<select name="" id="liao">
+						<option value="1">珍珠</option>
+						<option value="2">波霸</option>
+						<option value="3">布丁</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label class="" for="sku">你需要加什么料？
+					<select name="" id="sku">
+						<option value="1">小杯</option>
+						<option value="2">中杯</option>
+						<option value="3">大杯</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label class="" for="other">您还有其他别的要求吗？
+					<textarea name="" id="other" cols="30" rows="10"></textarea>
+				</label>
+			</p>
+			<p>
+				<label class="" for="contact">您的联系方式？
+					<input type="tel" name="" id="contact" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12">
+				</label>
+			</p>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+</body>
+
+</html>
