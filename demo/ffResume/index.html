@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="//at.alicdn.com/t/font_1084419_esu3kng89gk.js"></script>
 </head>
 
 <body>
@@ -28,60 +29,122 @@
 			</ul>
 		</nav>
 	</header>
-	<div style="background-image: url();"></div>
+	<div class="banner">
+		<div class="mask"></div>
+	</div>
 	<main>
-		<section>
-			<div class="person">
-				<img src="#" alt="照片">
-				<div class="tro">
-					<span>hello</span>
+		<section class="userCard">
+			<div class="person clearfix">
+				<div class="logo"><img src="images/logo.png" alt="照片"></div>
+				<div class="text clearfix">
+					<span class="welcome">Hello
+					</span>
 					<h1>袁琨</h1>
 					<p>全栈工程师</p>
 					<hr>
-					<dl>
-						<dt>年龄</dt>
-						<dd>18</dd>
-						<dt>城市</dt>
-						<dt>成都</dt>
-						<dt>邮箱</dt>
-						<dd>277922889@qq.com</dd>
-						<dt>手机</dt>
-						<dd>18121870533</dd>
-					</dl>
+					<ul>
+						<li><strong>年龄</strong><span>18</span></li>
+						<li><strong>城市</strong><span>成都</span></li>
+						<li><strong>邮箱</strong><span>277922889@qq.com</span></li>
+						<li><strong>手机</strong><span>18121870533</span></li>
+					</ul>
 				</div>
 			</div>
-			<div class="social">
-				<a href="#"></a><a href="#"></a><a href="#"></a>
+			<div class="media">
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-csdn"></use>
+					</svg>
+				</a>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-zhihu"></use>
+					</svg>
+				</a>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-google"></use>
+					</svg>
+				</a>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-github"></use>
+					</svg>
+				</a>
 			</div>
 		</section>
-		<section>
-			<a href="" download>下载PDF简历</a>
+		<section class="userResume">
+			<a class="downResume" href="" download>下载PDF简历</a>
 			<p>袁琨，全栈工程师，熟悉linux运维，Mysql运维，Java，SpringBoot，SpringCloud，HTML，CSS，Javascript，Vue，H5，小程序等开发</p>
 		</section>
-		<section>
-			<h2>技能</h2>
-			<ul>
-				<li>Linux</li>
-				<li>Mysql</li>
-				<li>Java</li>
-				<li>Spring</li>
-				<li>Javascript</li>
-				<li>Vue</li>
-				<li>Html5 & CSS3</li>
-				<li>大数据</li>
+		<section class="userSkills">
+			<h2>专业技能</h2>
+			<ul class="clearfix">
+				<li>
+					<span>Linux</span>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<span>Mysql</span>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<span>Java</span>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<span>Spring</span>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<span>Javascript</span>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<span>Vue</span>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
 			</ul>
 		</section>
-		<section>
+		<section class="userPortfolio">
 			<h2>作品集</h2>
-			<div>
-				<span>轮子</span>
-				<span>应用</span>
-				<span>网站</span>
+			<div class="nav">
+				<ul class="clearfix">
+					<li id="protfolio1">所有</li>
+					<li id="protfolio2">框架</li>
+					<li id="protfolio3">原生JS</li>
+				</ul>
+				<div id="protfolioBar" class="bar state-1">
+					<div class="bar-inner"></div>
+				</div>
 			</div>
-			<div>
-				<div><img src="#" alt=""></div>
-				<div><img src="#" alt=""></div>
-				<div><img src="#" alt=""></div>
+			<script>
+				protfolio1.onclick = function () {
+					protfolioBar.className = "bar state-1"
+				}
+				protfolio2.onclick = function () {
+					protfolioBar.className = "bar state-2"
+				}
+				protfolio3.onclick = function () {
+					protfolioBar.className = "bar state-3"
+				}
+			</script>
+			<div class="works">
+				<div class="big"><img src="images/works_1.jpg" alt=""></div>
+				<div class="small"><img src="images/works_2.jpg" alt=""></div>
+				<div class="small"><img src="images/works_3.jpg" alt=""></div>
 			</div>
 		</section>
 	</main>

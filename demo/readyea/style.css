@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* 设置背景颜色，背景图加载过程中会显示背景色 我试了下可加可不加 */
+  background-color: #cccccc;
+  font-family: Circular, PingFang-SC, 'Hiragino Sans GB', 微软雅黑,
+    'Microsoft YaHei', 'Heiti SC' !important;
+  color: #3c5280;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 920px;
+}
+.welcome {
+  background: #3399ff;
+  color: white;
+  /* 内联元素里文字居中，不要加宽高，用padding和lineheight来达到 */
+  display: inline-block;
+  padding: 4px 15.5px;
+  line-height: 22px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.welcome::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin-top: -3px;
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid #3399ff;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #3399ff;
+}
+
+h1 {
+  color: #d6ecff;
+  font-size: 42px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+hr {
+  height: 0;
+  border: none;
+  border: 1px solid #3399ff;
+  margin: 20px 0;
+}
+
+.intro {
+  font-size: 24px;
+  color: #d6ecff;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: #3399ff;
+  font-weight: 900;
+  font-size: 18px;
+  float: right;
+}
+.copyright {
+  position: fixed;
+  bottom: 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  color: #efefef;
+}
+.copyright a {
+  text-decoration: none;
+  color: #efefef;
+}
+
+.mask {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
