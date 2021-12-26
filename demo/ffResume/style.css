@@ -85,14 +85,14 @@ header > nav > ul > li > a:hover {
 
 /* banner */
 .banner {
-  background-image: url(images/rs-cover.jpg);
   height: 515px;
+  background-image: url(images/rs-cover.jpg);
   background-position: center center;
   background-size: cover;
 }
 .banner .mask {
   height: 515px;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8); */
 }
 
 /* profile */
