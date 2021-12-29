@@ -1,0 +1,55 @@
+.wrapper {
+    border: 1px solid #000000;
+}
+.left,
+.right {
+    width: 200px;
+    border: 1px dashed #ff6c60;
+    min-height: 30px;
+}
+.main {
+    border: 1px dashed #ff6c60;
+    min-height: 30px;
+}
+/*绝对定位
+缺点
+无法做到高度的自适应
+外层的padding无法管住左右定位元素
+宽度如果特别小，有可能出现中间遮盖两边的情况或相反
+*/
+.wrapper-absolute {
+    position: relative;
+}
+.wrapper-absolute .left,
+.wrapper-absolute .right {
+    position: absolute;
+    top:0;
+}
+.wrapper-absolute .left {
+    left:0;
+}
+.wrapper-absolute .right {
+    right: 0;
+}
+.wrapper-absolute .main {
+    margin: 0 210px;
+}
+/*圣杯
+兼容目前所有的主流浏览器，包括IE6在内
+相对比较难理解些，上手不容易，代码相对复杂。出现百分比宽度，过多的负值定位，如果出现布局的bug，排查不易
+*/
+.wrapper-holygrail .main{
+    width:100%;
+    float:left;
+}
+.wrapper-holygrail .main-wrapper{
+    margin:0 210px;
+}
+.wrapper-holygrail .left{
+    float:left;
+    margin-left:-100%;
+}
+.wrapper-holygrail .right{
+    float:left;
+    margin-left:-204px;
+}

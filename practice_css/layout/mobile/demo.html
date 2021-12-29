@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    .parent {
+      background: #ddd;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .child:nth-child(1) {
+      width: 120px;
+      line-height: 36px;
+      text-align: center;
+      background: #333;
+      color: #fff;
+    }
+
+    .banner {
+      width: auto;
+      height: 300px;
+      background: no-repeat center url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559829890804&di=d1e7b20bd03ac2e5e400acfd3e1be775&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201411%2F14%2F20141114135308_ZXaU3.jpeg');
+      margin: 0 auto;
+      background-size: cover;
+    }
+
+    .pictures {
+      width: auto;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .pictures .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -4px;
+      margin-right: -4px;
+      /*IE不支持nth-child  兼容IE的写法*/
+    }
+
+    .picture {
+      width: calc(50% - 8px);
+      height: 194px;
+      background: #ddd;
+      margin: 4px;
+    }
+
+    .art {
+      width: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .art>.sider {
+      width: auto;
+      height: auto;
+      background: #ddd;
+
+    }
+
+    .art>.main {
+      width: auto;
+      height: auto;
+      background: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="parent clearfix">
+    <div class="child">
+      logo
+    </div>
+
+    <div class="child">
+      <nav>
+        三
+      </nav>
+    </div>
+  </header>
+  <div class="banner"></div>
+  <div class="pictures">
+    <div class="wrapper">
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+    </div>
+  </div>
+  <div class="art clearfix">
+    <div class="sider">
+      广告1
+    </div>
+    <div class="main">
+      <div class="sider">
+        广告2
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

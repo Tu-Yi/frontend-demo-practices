@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>media</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css" media="(max-width:320px)"> -->
+</head>
+
+<body>
+  <header>
+    <div class="logo"></div>
+    <button id="btnMenu">菜单</button>
+    <ul id="menu" class="nav">
+      <li>导航1</li>
+      <li>导航2</li>
+      <li>导航3</li>
+      <li>导航4</li>
+      <li>导航5</li>
+    </ul>
+    <ul class="nav2">
+      <li>导航1</li>
+      <li>导航2</li>
+      <li>导航3</li>
+      <li>导航4</li>
+      <li>导航5</li>
+    </ul>
+  </header>
+  <script>
+    btnMenu.onclick = function () {
+      menu.classList.toggle('active')
+    }
+  </script>
+</body>
+
+</html>

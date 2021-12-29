@@ -1,0 +1,61 @@
+body {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    max-width: 870px;
+    min-width: 480px;
+    font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+    color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header {
+    float: left;
+    background: #86b0ed;
+    width: 194px;
+    height: 858px;
+    text-align: center;
+}
+main {
+    float: right;
+    padding-top: 25px;
+}
+h1 {
+    margin-top: 68px;
+    color:#ffffff;
+}
+section + section {
+    margin-top: 30px;
+}
+ul,
+dl {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+ul strong {
+    margin-right: 14px;
+}
+strong {
+    font-weight: 700;
+}
+ul {
+    margin-top: 30px;
+    list-style: none;
+}
+dl {
+    margin-top: 30px;
+}
+dl dt:nth-of-type(2n) {
+    margin-top: 22px;
+}
+li {
+    float: left;
+    margin-right: 40px;
+}

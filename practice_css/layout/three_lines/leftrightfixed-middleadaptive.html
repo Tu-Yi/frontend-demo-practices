@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>左右固定，中间自适应</title>
+	<link rel="stylesheet" href="leftrightfixed-middleadaptive.css">
+</head>
+
+<body>
+	<h1>左右固定宽度，中间自适应三列布局</h1>
+	<section>
+		<h2>
+			绝对定位
+		</h2>
+		<p style="color:#ff6c60;">
+			/*绝对定位
+			缺点
+			无法做到高度的自适应
+			外层的padding无法管住左右定位元素
+			宽度如果特别小，有可能出现中间遮盖两边的情况或相反
+			*/
+		</p>
+		<div class="wrapper wrapper-absolute">
+			<div class="main">
+				我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容
+			</div>
+			<div class="left">
+				左边固定宽度，高度不固定 </br> </br></br></br>高度有可能会很小，也可能很大。
+			</div>
+			<div class="right">
+				这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+				基本的样式是，两个div相距20px, 左侧div宽 120px
+			</div>
+		</div>
+	</section>
+	<section style="margin-top:150px;">
+		<h2>
+			双飞翼/圣杯
+		</h2>
+		<p style="color:#ff6c60;">
+			/*圣杯
+			兼容目前所有的主流浏览器，包括IE6在内
+			相对比较难理解些，上手不容易，代码相对复杂。出现百分比宽度，过多的负值定位，如果出现布局的bug，排查不易
+			*/
+		</p>
+		<div class="wrapper wrapper-holygrail">
+			<div class="main">
+				<div class="main-wrapper">
+					我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容我是主要内容
+				</div>
+			</div>
+			<div class="left">
+				左边固定宽度，高度不固定 </br> </br></br></br>高度有可能会很小，也可能很大。
+			</div>
+			<div class="right">
+				这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+				基本的样式是，两个div相距20px, 左侧div宽 120px
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

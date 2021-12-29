@@ -1,0 +1,117 @@
+/*默认样式*/
+* {
+    margin:0;
+    padding: 0;
+}
+/*清除浮动*/
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*bfc*/
+.cell {
+    display: table-cell; width: 9999px;
+    *display: inline-block; *width: auto;
+}
+h1 {
+    color:#ff6c60;
+}
+section {
+    margin-top: 30px;
+}
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+}
+.right {
+    width: 120px;
+    border: 5px solid #ddd;
+}
+.left {
+    margin-right: 20px;
+    border: 5px solid #ddd;
+}
+/*inline-block*/
+.wrapper-inline-block {
+    font-size: 0;
+}
+.wrapper-inline-block .right,
+.wrapper-inline-block .left {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.wrapper-inline-block .left {
+    width:calc(100% - 140px);
+}
+/*double-float*/
+.wrapper-double-float .left {
+    float:left;
+    box-sizing: border-box;
+    width: calc(100% - 140px);
+}
+.wrapper-double-float .right {
+    float: right;
+    box-sizing: border-box;
+}
+/*float+margin-right*/
+.wrapper-float .right {
+    float: right;
+    box-sizing: border-box;
+}
+.wrapper-float .left {
+    box-sizing: border-box;
+    margin-right: 140px;
+}
+/*absolute+margin-right*/
+.wrapper-absolute {
+    position: relative;
+    margin-bottom: 150px;
+}
+.wrapper-absolute .right {
+    position: absolute;
+    right: 20px;
+    top:15px;
+    box-sizing: border-box;
+}
+.wrapper-absolute .left {
+    box-sizing: border-box;
+    margin-right:140px;
+}
+/*float-bfc*/
+.wrapper-float-bfc .right {
+    float: right;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+.wrapper-float-bfc .left {
+    display: table-cell; width: 9999px;
+    *display: inline-block; *width: auto;
+    box-sizing: border-box;
+}
+/*flex*/
+.wrapper-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.wrapper-flex .right {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+.wrapper-flex .left {
+    flex:1 1 auto;
+    box-sizing: border-box;
+}
+/*grid*/
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: start;
+}
+.wrapper-grid .left,
+.wrapper-grid .right {
+    box-sizing: border-box;
+}

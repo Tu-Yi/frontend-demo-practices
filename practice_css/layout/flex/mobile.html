@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mobile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      height: 60px;
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      height: 60px;
+      background: #ddd;
+    }
+
+    footer ul {
+      display: flex;
+      height: 100%;
+    }
+
+    footer ul li {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer ul li+li {
+      border-left: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>header</header>
+    <main></main>
+    <footer>
+      <ul>
+        <li>首页</li>
+        <li>新闻</li>
+        <li>发现</li>
+        <li>我的</li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

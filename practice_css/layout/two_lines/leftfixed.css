@@ -1,0 +1,118 @@
+/*默认样式*/
+* {
+    margin:0;
+    padding: 0;
+}
+/*清除浮动*/
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*bfc*/
+.cell {
+    display: table-cell; width: 9999px;
+    *display: inline-block; *width: auto;
+}
+h1 {
+    color:#ff6c60;
+}
+section {
+    margin-top: 30px;
+}
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+}
+
+.left {
+    width: 120px;
+    border: 5px solid #ddd;
+}
+
+.right {
+    margin-left: 20px;
+    border: 5px solid #ddd;
+}
+/*双inline-block*/
+.wrapper-inline-block {
+    font-size: 0;
+}
+.wrapper-inline-block .left,
+.wrapper-inline-block .right {
+    display:inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.wrapper-inline-block .right {
+    width: calc(100% - 140px); /*运算符中间要有空格*/
+}
+/*双float*/
+.wrapper-double-float .left,
+.wrapper-double-float .right {
+    float:left;
+    box-sizing: border-box;
+}
+.wrapper-double-float .right {
+    width: calc(100% - 140px);
+}
+/*float+margin-left*/
+.wrapper-float .left {
+    float: left;
+    box-sizing: border-box;
+}
+.wrapper-float .right {
+    box-sizing: border-box;
+    margin-left:140px;
+}
+/*absolute+margin-left*/
+.wrapper-absolute {
+    position: relative;
+    margin-bottom:150px;
+    min-height: 30px;
+}
+.wrapper-absolute .left {
+    position: absolute;
+}
+.wrapper-absolute .right {
+    margin-left: 150px;
+}
+/*float+BFC*/
+.wrapper-float-bfc .left {
+    float: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+.wrapper-float-bfc .right {
+    display: table-cell; width: 9999px;
+    *display: inline-block; *width: auto;
+    box-sizing: border-box;
+}
+/*flex*/
+.wrapper-flex {
+    display: flex;
+    align-items: flex-start;
+}
+.wrapper-flex .left {
+    flex: 0 0 auto;
+}
+.wrapper-flex .right {
+    flex: 1 1 auto;
+}
+/*grid*/
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: start;
+}
+.wrapper-grid .left,
+.wrapper-grid .right {
+    box-sizing: border-box;
+}
+.wrapper-grid .left {
+    grid-column: 1;
+}
+.wrapper-grid .right {
+    grid-column: 2;
+}

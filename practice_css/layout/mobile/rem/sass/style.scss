@@ -1,0 +1,31 @@
+@function px($px) {
+  @return $px/$designWidth*10+rem;
+}
+
+$designWidth : 750;
+
+body {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.child {
+  width: px(300);
+  height: px(150);
+  margin: px(37.5) 0;
+  line-height: px(150);
+  text-align: center;
+  background: #ddd;
+  border: 1px solid red;
+}

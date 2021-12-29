@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    color: #333;
+    font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+}
+h1{
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid #333;
+    text-align: center;
+    background: url(rs-cover.jpg) no-repeat;
+    background-size: cover;
+}
+h2{
+    border: 10px solid #d3d3d3;
+    border-color: red blue black green;
+    border-width: 10px 50px 2px 20px;
+    border-top-color: transparent;
+}
+ul {
+padding-left: 2rem;
+list-style-type: none;
+}
+ul li {
+padding-left: 2rem;
+background-image: url(logo.png);
+background-position: 0 0;
+background-size: 1.6rem 1.6rem;
+background-repeat: no-repeat;
+}
+a[href="mailto:139000@qq.com"]{
+    text-decoration: none;
+    color: inherit;
+    background: url(logo.png) no-repeat right center;
+    background-size: 16px;
+    padding-right: 18px;
+}
+a:link{
+    color:inherit;
+}
+a:visited{
+    color:purple;
+}
+a:hover{
+    border-bottom: 1px solid;
+}
+a:active{
+    color: red;
+}
+dl{
+    width: 200px;
+}
+dt{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+dd{
+    text-indent: 2rem;
+    word-wrap: break-word;
+    line-height: 50px;
+}

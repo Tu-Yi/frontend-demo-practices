@@ -1,0 +1,85 @@
+/*默认样式*/
+* {
+    margin:0;
+    padding: 0;
+}
+/*清除浮动*/
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*bfc*/
+.cell {
+    display: table-cell; width: 9999px;
+    *display: inline-block; *width: auto;
+}
+h1 {
+    color:#ff6c60;
+}
+section {
+    margin-top: 30px;
+}
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+}
+.left {
+    width: 30%;
+    border: 5px solid #ddd;
+    box-sizing: border-box;
+}
+
+.right {
+    width:70%;
+    border: 5px solid #ddd;
+    box-sizing: border-box;
+}
+/*inline-block*/
+.wrapper-inline-block {
+    font-size: 0;
+}
+.wrapper-inline-block .left,
+.wrapper-inline-block .right {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+/*double-float*/
+.wrapper-double-float .left {
+    float: left;
+}
+.wrapper-double-float .right {
+    float: right;
+}
+/*absolute*/
+.wrapper-absolute {
+    position: relative;
+    margin-bottom: 150px;
+}
+/* 绝对定位后宽度百分比是父容器的百分比，忽视padding */
+.wrapper-absolute .left {
+    position:absolute;
+    width:calc(30% - 10px);
+}
+.wrapper-absolute .right {
+    margin-left: 30%;
+}
+/*flex*/
+.wrapper-flex {
+    display:flex;
+    align-items: flex-start;
+}
+/*grid*/
+.wrapper-grid {
+    display: grid;
+    grid-template-columns:30% 70%;
+    align-items: start;
+}
+.wrapper-grid .left_grid,
+.wrapper-grid .right_grid {
+    border: 5px solid #ddd;
+    box-sizing: border-box;
+}
+
+

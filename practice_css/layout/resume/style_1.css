@@ -1,0 +1,50 @@
+body {
+    border: 1px solid #eeeeee;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    max-width: 700px;
+    min-width: 480px;
+    font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+    color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+h1 {
+    margin: 30px 0;
+}
+section + section {
+    margin-top: 30px;
+}
+ul,
+dl {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+ul strong {
+    margin-right: 14px;
+}
+strong {
+    font-weight: 700;
+}
+ul {
+    margin-top: 30px;
+    list-style: none;
+}
+dl {
+    margin-top: 30px;
+}
+dl dt:nth-of-type(2n) {
+    margin-top: 22px;
+}
+li {
+    float: left;
+    margin-right: 40px;
+}
