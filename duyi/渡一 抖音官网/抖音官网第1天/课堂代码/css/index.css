@@ -1,0 +1,45 @@
+/* index.css: 统一样式 */
+
+/* 1. 选中所有元素，清除默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  /* 写了就不掉头发，不写就掉头发 */
+  box-sizing: border-box;
+}
+
+/* 2. 设置a元素的样式 */
+a {
+  text-decoration: none;
+  /* 继承父元素的颜色 */
+  color: inherit;
+}
+
+/* 3. 设置页面整体文字颜色（0.7透明度的白色） */
+body {
+  color: rgba(255, 255, 255, 0.7);
+  min-width: 1200px;
+}
+html {
+  /* 避免出现滚动条 */
+  overflow: hidden;
+}
+
+/* 4. 完成整体两栏布局 */
+.container {
+  width: 100%;
+  /* vh: viewport height */
+  /* height: 100vh; */
+  height: 100vh;
+  display: flex;
+}
+
+.aside {
+  background: #060716;
+  width: 172px;
+}
+
+.main {
+  background: #161722;
+  flex: 1 0 auto;
+}

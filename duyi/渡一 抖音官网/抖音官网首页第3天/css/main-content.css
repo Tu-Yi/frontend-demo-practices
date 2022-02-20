@@ -1,0 +1,67 @@
+.main-content {
+  /* background: red; */
+  height: calc(100vh - 60px);
+  width: calc(100vw - 172px);
+  overflow: hidden scroll;
+}
+
+/* 设置整个滚动条的样式 */
+.main-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* 设置滚动条中滑块的样式 */
+.main-content::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #31323a;
+}
+
+/* 列表项 */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 22px;
+  padding-top: 22px;
+  align-items: flex-start;
+}
+
+.main-content-item {
+  width: 25%;
+  /* border: 1px solid; */
+  margin-bottom: 22px;
+  padding: 0 8px;
+}
+
+.item-title {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0;
+  line-height: 24px;
+  height: 48px;
+  /* 多行文本溢出省略 */
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.item-author {
+  height: 32px;
+  background: #008c8c;
+}
+
+.item-cover {
+  display: block;
+  width: 100%;
+  outline: 1px solid;
+  height: 0;
+  padding-bottom: 75%;
+  position: relative;
+}
+
+.test {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: red;
+}

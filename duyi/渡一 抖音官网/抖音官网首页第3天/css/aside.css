@@ -1,0 +1,90 @@
+/* 侧边栏的所有样式 */
+
+/* logo样式 */
+.aside-logo {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside-logo a {
+  background: url(../asset/logo.svg);
+  width: 91px;
+  height: 34px;
+}
+.aside-logo h1 {
+  display: none;
+}
+
+.aside-main {
+  height: calc(100vh - 60px);
+  overflow: hidden scroll;
+}
+
+/* 菜单样式 */
+.aside-menu a {
+  height: 36px;
+  /* outline: 1px solid; */
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-left: 44px;
+}
+.aside-menu .iconfont {
+  font-size: 24px;
+  margin-right: 5px;
+}
+.aside-menu a.active,
+.aside-menu a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+.aside-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aside-split {
+  width: 70px;
+  height: 1px;
+  background: #31323a;
+  margin-left: 40px;
+  margin-top: 12px;
+}
+/* 页脚区域 */
+.aside-footer {
+  font-size: 12px;
+  padding: 0 10px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.aside-section {
+  color: rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid #31323a;
+  padding: 10px 0;
+}
+.aside-section img {
+  width: 12px;
+  height: 12px;
+}
+.aside-section p {
+  margin: 10px 0;
+}
+
+.aside-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aside-links a {
+  margin-top: 8px;
+  margin-right: 12px;
+}
+
+/* 选中第偶数个子元素a，将它们的margin-right设置为0 */
+.aside-links a:nth-child(even) {
+  margin-right: 0;
+}
+
+/* 处理滚动条 */
+.aside-main::-webkit-scrollbar {
+  width: 0;
+}
