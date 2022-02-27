@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: absolute;
+  width: 640px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-top: -150px;
+  margin-left: -320px;
+}
+.wrapper > div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  border-width: 20px;
+  border-style: solid;
+}
+.circle-blue {
+  border-color: #2267a9;
+}
+.circle-black {
+  border-color: black;
+  left: 220px;
+}
+.circle-red {
+  border-color: #e00f00;
+  left: 440px;
+}
+.circle-yellow {
+  border-color: #f4b100;
+  left: 100px;
+  top: 100px;
+}
+.circle-green {
+  border-color: #35a23c;
+  left: 320px;
+  top: 100px;
+}
