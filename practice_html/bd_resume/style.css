@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
+    Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-style: normal;
+}
+
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+button,
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+header {
+  background: #eee;
+}
+header ul {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+header ul li {
+  float: left;
+  margin-right: 20px;
+}
+header ul li a {
+  display: block;
+  height: 150px;
+  line-height: 150px;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.5);
+}
+header ul li:first-child {
+  font-weight: 700;
+}
+
+.person {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.person p.welcome {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #999999;
+  font-size: 24px;
+}
+.person img {
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  float: left;
+  clear: both;
+}
+.person h1 {
+  font-size: 48px;
+  margin-left: 120px;
+}
+.person p {
+  font-size: 24px;
+}
+.intro {
+  margin-left: 120px;
+}
+section.work,
+section.lan {
+  background-color: #eee;
+}
+section > div {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+section .content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-weight: bold;
+  align-items: flex-start;
+  font-size: 24px;
+}
+.content span {
+  color: #adadad;
+}
+section.work > div > .content strong {
+  font-size: 24px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #adadad;
+}

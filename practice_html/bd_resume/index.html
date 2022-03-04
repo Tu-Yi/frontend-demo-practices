@@ -6,95 +6,101 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	<!-- https://b.bdstatic.com/searchbox/icms/searchbox/img/resume%E7%9A%84%E5%89%AF%E6%9C%AC.png -->
 	<header>
-		<nav>
-			<ul>
-				<li><a href="#">基本信息</a></li>
-				<li><a href="#">工作经历</a></li>
-				<li><a href="#">教育经历</a></li>
-				<li><a href="#">语言技能</a></li>
-				<li><a href="#">奖项&证书</a></li>
-			</ul>
-		</nav>
+		<ul class="clearfix">
+			<li><a href="#">基本信息</a></li>
+			<li><a href="#">工作经历</a></li>
+			<li><a href="#">教育经历</a></li>
+			<li><a href="#">语言技能</a></li>
+			<li><a href="#">奖项&证书</a></li>
+		</ul>
 	</header>
-	<section>
-		<p>
+	<section class="person">
+		<p class="welcome">
 			Hi,I`m kale from china
 		</p>
-		<img src="#" alt="头像">
+		<img src="https://resource.withpinbox.com/icons/github.png" width="120" alt="" hspace="8">
 		<h1>FULL STACK DEVELOPER</h1>
-		<span>xxxxx xx xxxxxx xxxxx xxxx xx xxxx x xxxxx xxx xxxxxxxxxxxxxx xxxxx xxx xxxxxx xxxxx xxxxxxx xxxxxxx xxxxx
-			xxxxx xxxx xxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxx</span>
+		<p class="intro">xxxxx xx xxxxxx xxxxx xxxx xx xxxx x xxxxx xxx xxxxxxxx</p>
+		<p>xxxxxxxxxxxxxx xxxxx xxx xxxxxx xxxxx xxxxxxx xxxxxxx xxxxx
+			xxxxx xxxx xxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxx xxxxxxxxx xxxxxxxx xxxxxxx xxxxxx</p>
 	</section>
-	<section>
-		<h2>工作经历</h2>
+	<section class="work">
 		<div>
-			<span>2014-2015</span>
-			<strong>xxx xxxxxxx</strong>
-			<hr>
-			<span>Web Designer</span>
-		</div>
-		<div>
-			<span>2014-2015</span>
-			<strong>xxxx</strong>
-			<hr>
-			<span>UI/UX Designer</span>
-		</div>
-		<div>
-			<span>2014-2015</span>
-			<strong>xxxXXX xxxxxxx</strong>
-			<hr>
-			<span>System Designer</span>
-		</div>
-	</section>
-	<section>
-		<h2>教育经历</h2>
-		<div>
-			<span>2014-2015</span>
-			<strong>xxx xxxxxxx</strong>
-		</div>
-		<div>
-			<span>2014-2015</span>
-			<strong>xxxx</strong>
-		</div>
-		<div>
-			<span>2014-2015</span>
-			<strong>xxxXXX xxxxxxx</strong>
+			<h2>工作经历</h2>
+			<div class="content">
+				<span>2014-2015</span>
+				<strong>xxx xxxxxxx</strong>
+				<span>Web Designer</span>
+			</div>
+			<div class="content">
+				<span>2014-2015</span>
+				<strong>xxxx</strong>
+				<span>UI/UX Designer</span>
+			</div>
+			<div class="content">
+				<span>2014-2015</span>
+				<strong>xxxXXX xxxxxxx</strong>
+				<span>System Designer</span>
+			</div>
 		</div>
 	</section>
-	<section>
-		<h2>语言技能</h2>
+	<section class="edu">
 		<div>
-			<span>Web Technology</span>
-			<strong>HTML/CSS/SASS/PHP/Javascript</strong>
+			<h2>教育经历</h2>
+			<div class="content">
+				<span>2014-2015</span>
+				<strong>xxx xxxxxxx</strong>
+			</div>
+			<div class="content">
+				<span>2014-2015</span>
+				<strong>xxxx</strong>
+			</div>
+			<div class="content">
+				<span>2014-2015</span>
+				<strong>xxxXXX xxxxxxx</strong>
+			</div>
 		</div>
+	</section>
+	<section class="lan">
 		<div>
-			<span>Database</span>
-			<strong>MySQL/MongoDB/Oracle/Acess</strong>
-		</div>
-		<div>
-			<span>Framework</span>
-			<strong>Laravel/Codelgniter/Zend/Ruby ON Rails</strong>
+			<h2>语言技能</h2>
+			<div class="content">
+				<span>Web Technology</span>
+				<strong>HTML/CSS/SASS/PHP/Javascript</strong>
+			</div>
+			<div class="content">
+				<span>Database</span>
+				<strong>MySQL/MongoDB/Oracle/Acess</strong>
+			</div>
+			<div class="content">
+				<span>Framework</span>
+				<strong>Laravel/Codelgniter/Zend/Ruby ON Rails</strong>
+			</div>
 		</div>
 	</section>
 	<section>
-		<h2>奖项&证书</h2>
-		<div>
-			<span>January 2014</span>
-			<strong>xxxxxxxxxxxxxxxx</strong>
+		<div class="honor">
+			<h2>奖项&证书</h2>
+			<div class="content">
+				<span>January 2014</span>
+				<strong>xxxxxxxxxxxxxxxx</strong>
+			</div>
+			<div class="content">
+				<span>December 2014</span>
+				<strong>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</strong>
+			</div>
+			<div class="content">
+				<span>March 2014</span>
+				<strong>xxxxxxxxxxxxxxxxxxxxx</strong>
+			</div>
 		</div>
-		<div>
-			<span>December 2014</span>
-			<strong>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</strong>
-		</div>
-		<div>
-			<span>March 2014</span>
-			<strong>xxxxxxxxxxxxxxxxxxxxx</strong>
-		</div>
+
 	</section>
 </body>
 
