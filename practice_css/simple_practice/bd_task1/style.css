@@ -1,0 +1,105 @@
+/* 整体样式 */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
+    Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-style: normal;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+button,
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* 分隔符------------------------ */
+header,
+footer,
+section {
+  margin: 0 auto;
+  width: 1000px;
+}
+header {
+  background-color: #7d76b3;
+  color: #fff;
+  padding-bottom: 100px;
+}
+header nav {
+  padding: 10px;
+  font-weight: bold;
+}
+.nav-left {
+  float: left;
+}
+.nav-left span:nth-child(1) {
+  background-color: #fff;
+  color: #7d76b3;
+  /* 垂直的padding不影响行高，但会显示背景 */
+  padding: 2px 5px;
+}
+.nav-right {
+  float: right;
+}
+header h1 {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 800px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 50px;
+}
+header p {
+  width: 800px;
+  margin: 0 auto;
+}
+section.orci .wrapper {
+  float: left;
+}
+section.orci .wrapper img {
+  width: 400px;
+}
+section.orci .info {
+}

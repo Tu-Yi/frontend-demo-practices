@@ -1,114 +1,58 @@
-/* General setup */
+/* 整体样式 */
 
 * {
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
-  font-family: 'Roboto Slab', serif;
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
+    Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
 }
 
-/* Layout */
-
-section {
-  float: left;
-  width: 50%;
-}
-
-aside {
-  float: left;
-  width: 30%;
-}
-
-nav {
-  float: left;
-  width: 20%;
-}
-
-footer {
+.clearfix::after {
+  content: '';
+  display: block;
   clear: both;
 }
 
-header,
-section,
-aside,
-nav,
-footer {
-  padding: 20px;
-}
-
-/* header and footer */
-
-header,
-footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
-}
-
-/* WRITE YOUR CODE BELOW HERE */
-body {
-  font-family: 'Roboto Slab', serif;
-  font-size: 10px;
-  line-height: 2;
-  letter-spacing: 1px;
-  word-wrap: 3px;
-}
-header {
-  font-family: 'Syne Mono', monospace;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-  letter-spacing: 2;
-  line-height: 1;
-}
-h2 {
-  font-size: 20px;
-}
-section > h2 + p {
-  text-indent: 20px;
-}
-
-a:link {
-  color: #a66;
-}
-a:visited {
-}
-a:focus {
-  outline: 0;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-  color: green;
-}
-a[href*='http'] {
-  background: url(https://mdn.mozillademos.org/files/12982/external-link-52.png)
-    no-repeat right;
-  background-size: 16px 16px;
-  padding-right: 16px;
-}
-nav ul {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-nav ul li {
-  margin-bottom: 10px;
+
+h1,
+h2,
+h3,
+h4 {
+  font-style: normal;
 }
-nav ul li a {
-  display: inline-block;
-  width: 120px;
-  line-height: 3;
-  text-align: center;
-  border: 1px solid #a66;
+
+a,
+a:hover {
   text-decoration: none;
 }
-nav ul li a:hover {
-  background-color: #a66;
-  color: #fff;
+
+a:active,
+a:hover {
+  outline: 0;
 }
+
+button,
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* 分隔符------------------------ */
