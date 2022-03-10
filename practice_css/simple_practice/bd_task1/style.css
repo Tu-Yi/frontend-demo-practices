@@ -61,6 +61,8 @@ footer,
 section {
   margin: 0 auto;
   width: 1000px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 header {
   background-color: #7d76b3;
@@ -98,8 +100,56 @@ header p {
 section.orci .wrapper {
   float: left;
 }
-section.orci .wrapper img {
+section.orci .info {
+  float: left;
+}
+section.magna .wrapper {
+  float: right;
+}
+section.magna .info {
+  float: right;
+  background-color: #333856;
+}
+.wrapper img {
   width: 400px;
 }
-section.orci .info {
+
+.wrapper {
+  font-size: 0;
+}
+
+.info {
+  background-color: #2e3450;
+  color: #fff;
+  width: 600px;
+  height: 358px;
+  padding: 0 30px;
+  padding-top: 50px;
+}
+.info h2 {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 30px;
+}
+.info a {
+  color: #fff;
+  margin-top: 30px;
+  display: inline-block;
+  line-height: 3;
+  border: 2px solid #fff;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+section.massa .info {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+footer {
+  background-color: #242a43;
+  color: #434960;
+  padding: 50px;
+  height: 100px;
 }

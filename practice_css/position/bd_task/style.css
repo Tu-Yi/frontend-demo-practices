@@ -56,19 +56,34 @@ button {
 }
 
 /* 分隔符------------------------ */
-figure {
-  border: 1px solid red;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 500px;
-  width: 400px;
+header {
+  height: 100px;
+  padding: 30px;
 }
-figcaption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+nav {
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 24px;
+  line-height: 2;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+section {
+  padding: 100px;
+  text-align: center;
+}
+section:nth-child(2n) {
+  background-color: #eee;
 }
