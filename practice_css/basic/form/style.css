@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: whitesmoke;
+}
+
+input[type='text']:focus {
+  padding: 13px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type='submit'] {
+  background-color: #008b8b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+#fname {
+  background-image: url('user.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  padding-left: 36px;
+  background-size: 20px;
+}
+
+body {
+  margin: 0;
+  border-top: 4px solid #008b8b;
+}
+h1 {
+  text-align: center;
+  color: #008b8b;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  text-align: right;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 600 像素时，使两列相互堆叠而不是彼此并排。 */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type='submit'] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .col-25 {
+    text-align: left;
+  }
+}
