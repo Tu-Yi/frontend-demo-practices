@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.card {
+  width: 400px;
+  height: 300px;
+  display: inline-block;
+}
+.box {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #000;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+.img1 {
+  object-fit: fill;
+}
+.img2 {
+  object-fit: contain;
+}
+.img3 {
+  object-fit: cover;
+}
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
