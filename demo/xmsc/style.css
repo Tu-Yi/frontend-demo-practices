@@ -10,6 +10,7 @@ body {
     Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
   color: #333;
   background-color: #fff;
+  min-width: 1226px;
 }
 
 .clearfix::after {
@@ -41,6 +42,9 @@ a:active,
 a:hover {
   outline: 0;
 }
+a {
+  color: inherit;
+}
 
 button,
 input {
@@ -53,5 +57,53 @@ button {
   -webkit-appearance: button;
   cursor: pointer;
 }
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 
 /* 分隔符------------------------ */
+.site-topBar {
+  font-size: 12px;
+  background-color: #333333;
+  color: #b0b0b0;
+}
+.site-topBar-container {
+  width: 1226px;
+  margin: 0 auto;
+}
+.site-topBar-container .menu {
+  float: left;
+}
+.site-topBar-container li {
+  float: left;
+}
+.site-topBar-container li a {
+  color: #b0b0b0;
+  line-height: 40px;
+  display: inline-block;
+}
+.site-topBar-container li a:hover {
+  color: #fff;
+}
+.site-topBar-container li .sep {
+  margin: 0 0.3em;
+  color: #424242;
+}
+.site-topBar-container .omenu {
+  float: right;
+}
+.site-topBar-container .shopcat {
+  float: right;
+  margin-left: 20px;
+  background-color: #424242;
+  line-height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.site-topBar-container .shopcat svg {
+  font-size: 20px;
+}
