@@ -139,6 +139,7 @@ button {
 .site-header {
   margin: 0 auto;
   width: 1226px;
+  /* z-index: 9999; */
 }
 .site-header .logo {
   float: left;
@@ -177,6 +178,7 @@ button {
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  background-color: #fff;
 }
 .menu-inner:hover {
   display: block;
@@ -266,4 +268,40 @@ button {
 .search-btn:hover {
   background: #ff6700;
   color: #fff;
+}
+
+section.banner-menu {
+  margin: 0 auto;
+  width: 1226px;
+}
+.banner-menu .banner {
+  position: relative;
+}
+.banner-menu .banner img {
+  width: 1226px;
+}
+.banner-menu .banner .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(112, 106, 106, 0.6);
+  width: 234px;
+  height: 460px;
+  padding: 20px 0px;
+  font-size: 14px;
+}
+.banner-menu .banner .menu a {
+  display: block;
+  line-height: 42px;
+  padding-left: 30px;
+  position: relative;
+  color: #fff;
+}
+.banner-menu .banner .menu a svg {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
+.banner-menu .banner .menu a:hover {
+  background-color: #ff6700;
 }
