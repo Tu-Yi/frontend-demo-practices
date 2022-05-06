@@ -277,7 +277,7 @@ section.banner-menu {
 .banner-menu .banner {
   position: relative;
 }
-.banner-menu .banner img {
+.banner-menu .banner > img {
   width: 1226px;
 }
 .banner-menu .banner .menu {
@@ -290,18 +290,72 @@ section.banner-menu {
   padding: 20px 0px;
   font-size: 14px;
 }
-.banner-menu .banner .menu a {
+.menu > ul > li > a {
   display: block;
   line-height: 42px;
   padding-left: 30px;
   position: relative;
   color: #fff;
 }
-.banner-menu .banner .menu a svg {
+.menu > ul > li > a svg {
   position: absolute;
   right: 20px;
   top: 14px;
 }
-.banner-menu .banner .menu a:hover {
+.menu > ul > li > a:hover {
   background-color: #ff6700;
+}
+.menu > ul > li:hover .menu-goods {
+  display: block;
+}
+.menu-goods:hover {
+  display: block;
+}
+.menu-goods {
+  width: 992px;
+  display: none;
+  position: absolute;
+  left: 234px;
+  top: 0;
+  z-index: 24;
+  height: 460px;
+  border-left: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 8px 16px rgb(0 0 0 / 18%);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 18%);
+}
+.menu-goods > ul {
+  width: 248px;
+  float: left;
+  height: 460px;
+  margin: 0;
+  padding: 2px 0;
+}
+.menu .menu-goods > ul > li {
+  position: relative;
+}
+.menu-goods > ul > li a {
+  width: 265px;
+  display: block;
+  padding: 18px 20px;
+  height: 76px;
+  line-height: 76px;
+  transition: color 0.2s;
+}
+.menu-goods > ul > li a:hover {
+  color: #ff6700;
+}
+.menu-goods > ul > li > a img {
+  float: left;
+  margin-right: 12px;
+  vertical-align: middle;
+  width: 40px;
+}
+.menu-goods > ul > li > a span {
+  float: left;
+  width: 172px;
+  line-height: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

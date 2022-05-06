@@ -9,7 +9,6 @@
 	<title>Responsive Web Design Task: Task</title>
 	<script src="//at.alicdn.com/t/font_2761238_10en9bjzswu.js"></script>
 	<link rel="stylesheet" href="style.css" />
-
 </head>
 <!-- TODO site-topBar购物车下弹div被搜索form遮挡的问题 -->
 
@@ -18,6 +17,7 @@
 		<div class="site-topBar">
 			<div class="site-topBar-container clearfix">
 				<ul class="menu clearfix">
+					<!-- 使用文字实现分隔符，可以保证高度和字符相同 -->
 					<li><a href="">小米商城</a><span class="sep">|</span></li>
 					<li><a href="">MIUI</a><span class="sep">|</span></li>
 					<li><a href="">IOT</a><span class="sep">|</span></li>
@@ -53,39 +53,52 @@
 				<img src="img/logo.png" alt="xiaomi" />
 			</div>
 			<ul class="menu clearfix">
-				<li class="menuTrigger"><a href="">Xiaomi手机</a>
+				<li class="menuTrigger">
+					<a href="">Xiaomi手机</a>
 					<div class="menu-inner">
 						<ul class="menu-inner-container clearfix">
-							<li class="firstCard"><a href="">
-									<img src="img/mi10s.png" alt="">
+							<li class="firstCard">
+								<a href="">
+									<img src="img/mi10s.png" alt="" />
 									<p class="name">Xiaomi 10s</p>
 									<p class="price">4699元起</p>
-								</a></li>
-							<li><a href="">
-									<img src="img/mi11pro.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/mi11pro.png" alt="" />
 									<p class="name">Xiaomi 11 pro</p>
 									<p class="price">5299元起</p>
-								</a></li>
-							<li><a href="">
-									<img src="img/mi11qc.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/mi11qc.png" alt="" />
 									<p class="name">Xiaomi 11qc</p>
 									<p class="price">4999元起</p>
-								</a></li>
-							<li><a href="">
-									<img src="img/mi11ultra.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/mi11ultra.png" alt="" />
 									<p class="name">Xiaomi 11 ultra</p>
 									<p class="price">6000元起</p>
-								</a></li>
-							<li><a href="">
-									<img src="img/mix4.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/mix4.png" alt="" />
 									<p class="name">Xiaomi mix 4</p>
 									<p class="price">3999元起</p>
-								</a></li>
-							<li><a href="">
-									<img src="img/mixfold.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/mixfold.png" alt="" />
 									<p class="name">Xiaomi mix fold</p>
 									<p class="price">4000元起</p>
-								</a></li>
+								</a>
+							</li>
 						</ul>
 					</div>
 				</li>
@@ -112,39 +125,165 @@
 	</header>
 	<section class="banner-menu">
 		<div class="banner">
-			<img src="img/swiper.jpg" alt="">
+			<img src="img/swiper.jpg" alt="" />
 			<div class="menu">
 				<ul>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+						<div class="menu-goods">
+							<ul>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+							</ul>
+							<ul>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+							</ul>
+							<ul>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+							</ul>
+							<ul>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+								<li><a href="">
+										<img src="img/c_mix4.png" alt="">
+										<span>Xiaomi MIX 4</span>
+									</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
-					<li><a href=""><span>手机</span><svg class="icon" aria-hidden="true">
+							</svg></a>
+					</li>
+					<li>
+						<a href=""><span>手机</span><svg class="icon" aria-hidden="true">
 								<use xlink:href="#icon-jiantou"></use>
-							</svg></a></li>
+							</svg></a>
+					</li>
 				</ul>
 			</div>
 		</div>
